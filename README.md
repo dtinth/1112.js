@@ -19,7 +19,7 @@ You need Node.js and Yarn to use this.
    }
    ```
 
-4. Run `index.js`.
+4. Run `./node_modules/.bin/prescript index.js`.
 
 This will order a Meat Deluxe to your default location.
 
