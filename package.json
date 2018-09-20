@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "prescript": "^0.720.6",
+    "puppeteer": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^1.6.4"
+  }
+}
