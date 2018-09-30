@@ -93,7 +93,11 @@ step('Click the next button', () =>
 step('Place order', () =>
   action(async state => {
     const page = getPage(state)
-    await page.waitForSelector('[title="Monstar Hub, ถนน รัชดาภิเษ"]', {
+    const config = JSON.parse(
+      require('fs').readFileSync(process.env.HOME + '/.pizza.json', 'utf8')
+    )
+    const address = config.address
+    await page.waitForSelector('[title="'+ address +'"]', {
       timeout: 5000
     })
     await page.waitForSelector('.placeorder-btn')
